@@ -1,0 +1,6 @@
+{
+  "name": "Eribaldo Pinheiro Advocacia",
+  "description": "Escritório de advocacia premium especializado em Direito Previdenciário, Direito Bancário e Contratos em Guarapari/ES.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
