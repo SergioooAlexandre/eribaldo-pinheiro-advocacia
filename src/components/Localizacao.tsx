@@ -1,156 +1,121 @@
 import React from 'react';
-import { UserCheck, Landmark, FileText, ArrowRight, MapPin } from 'lucide-react';
-import { motion } from 'motion/react';
+import { MapPin, Navigation, Clock, Phone } from 'lucide-react';
 
 export default function Localizacao() {
-  const areas = [
-    {
-      title: 'Direito Previdenciário',
-      icon: UserCheck,
-      description:
-        'Planejamento de aposentadoria, concessão e revisão de benefícios, pensões e BPC/LOAS com foco no seu direito.',
-      linkText: 'Consultar Direito Previdenciário',
-    },
-    {
-      title: 'Direito Bancário',
-      icon: Landmark,
-      description:
-        'Combate a juros abusivos, defesa contra busca e apreensão de veículos, renegociação de dívidas e fraudes.',
-      linkText: 'Consultar Direito Bancário',
-    },
-    {
-      title: 'Contratos',
-      icon: FileText,
-      description:
-        'Elaboração, análise e rescisão de contratos civis e comerciais com total clareza e segurança jurídica.',
-      linkText: 'Consultar Contratos',
-    },
-  ];
-
-  const mapsUrl =
-    'https://www.google.com/maps/search/?api=1&query=Travessa+Oscar+da+Costa+Neiva,+20,+Apto+902,+Centro,+Guarapari,+ES,+29200-125';
-
   return (
-    <section id="localizacao" className="bg-white py-20 md:py-24 scroll-mt-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="atendimento"
+      className="w-full bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-visible"
+    >
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+          {/* LADO ESQUERDO - LOCALIZAÇÃO */}
+          <div className="w-full">
+            <span className="text-xs uppercase tracking-[0.35em] text-[#C88A1A] block mb-4">
+              Atendimento e Localização
+            </span>
 
-          {/* ===== ESQUERDA ===== */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="lg:col-span-5 flex flex-col h-full"
-          >
-            <div className="mb-6">
-              <span className="text-[11px] font-semibold text-[#C88A1A] tracking-widest uppercase block mb-2">
-                Onde Atendemos
-              </span>
+            <h2 className="text-3xl md:text-5xl font-light text-[#0A0A0A] mb-6">
+              Onde Atendemos
+            </h2>
 
-              <h2 className="text-2xl font-light text-[#111111]">
-                Localização
-              </h2>
+            <div className="w-20 h-[2px] bg-[#C88A1A] mb-8"></div>
 
-              <div className="mt-3 h-[1px] w-12 bg-[#C88A1A]" />
+            <p className="text-gray-600 leading-relaxed mb-8 text-base md:text-lg">
+              O escritório está localizado em Guarapari/ES, oferecendo atendimento
+              jurídico com seriedade, discrição e compromisso com cada cliente.
+            </p>
+
+            <div className="space-y-5 mb-8">
+              <div className="flex items-start gap-4">
+                <div className="min-w-10 w-10 h-10 bg-[#C88A1A]/10 flex items-center justify-center">
+                  <MapPin size={20} className="text-[#C88A1A]" />
+                </div>
+                <div>
+                  <p className="text-[#0A0A0A] font-semibold mb-1">Endereço</p>
+                  <p className="text-gray-600 text-sm md:text-base">
+                    Travessa Oscar da Costa Neiva, nº 20<br />
+                    Guarapari - ES
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="min-w-10 w-10 h-10 bg-[#C88A1A]/10 flex items-center justify-center">
+                  <Clock size={20} className="text-[#C88A1A]" />
+                </div>
+                <div>
+                  <p className="text-[#0A0A0A] font-semibold mb-1">Horário</p>
+                  <p className="text-gray-600 text-sm md:text-base">
+                    Segunda a sexta, das 09h às 18h
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="min-w-10 w-10 h-10 bg-[#C88A1A]/10 flex items-center justify-center">
+                  <Phone size={20} className="text-[#C88A1A]" />
+                </div>
+                <div>
+                  <p className="text-[#0A0A0A] font-semibold mb-1">WhatsApp</p>
+                  <p className="text-gray-600 text-sm md:text-base">
+                    (27) 99794-5980
+                  </p>
+                </div>
+              </div>
             </div>
 
             <a
-              href={mapsUrl}
+              href="https://www.google.com/maps/search/?api=1&query=Travessa%20Oscar%20da%20Costa%20Neiva%2020%20Guarapari%20ES"
               target="_blank"
               rel="noreferrer"
-              className="group flex-1 block border border-[#C88A1A]/30 bg-[#0A0A0A] overflow-hidden shadow-lg"
+              className="inline-flex items-center justify-center gap-3 bg-[#0A0A0A] text-white px-6 py-4 text-xs uppercase tracking-widest hover:bg-[#C88A1A] hover:text-black transition w-full sm:w-auto"
             >
-              <div className="relative w-full h-full">
-
-                {/* Fundo */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition duration-500"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1400&q=80')",
-                  }}
-                />
-
-                {/* Botão */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="border border-[#C88A1A]/40 bg-[#111111]/90 px-6 py-4 text-center">
-                    <MapPin className="mx-auto mb-2 text-[#C88A1A]" size={16} />
-                    <p className="text-sm font-semibold uppercase text-white">
-                      Abrir no Maps
-                    </p>
-                    <p className="text-[11px] uppercase text-[#C88A1A] mt-1">
-                      Ver rotas
-                    </p>
-                  </div>
-                </div>
-
-              </div>
+              <Navigation size={16} />
+              Abrir no Google Maps
             </a>
-          </motion.div>
+          </div>
 
-          {/* ===== DIREITA ===== */}
-          <motion.div
-            id="areas"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="lg:col-span-7 flex flex-col h-full"
-          >
-            <div className="mb-6 pb-1">
-              <span className="text-[11px] font-semibold text-[#C88A1A] tracking-widest uppercase block mb-2">
-                Especialidades do Escritório
+          {/* LADO DIREITO - CARD/MAPA */}
+          <div className="w-full">
+            <div className="w-full bg-[#0A0A0A] text-white p-6 md:p-10 border border-black/10">
+              <span className="text-xs uppercase tracking-[0.3em] text-[#C88A1A] block mb-4">
+                Mapa
               </span>
 
-              <h3 className="text-2xl font-light text-[#111111]">
-                Áreas de Atuação
+              <h3 className="text-2xl md:text-3xl font-light mb-6">
+                Localização do Escritório
               </h3>
 
-              {/* LINHA DOURADA ADICIONADA */}
-              <div className="mt-3 h-[1px] w-12 bg-[#C88A1A]" />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Travessa%20Oscar%20da%20Costa%20Neiva%2020%20Guarapari%20ES"
+                target="_blank"
+                rel="noreferrer"
+                className="block w-full min-h-[260px] md:min-h-[360px] bg-[#111111] border border-white/10 relative overflow-hidden group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#C88A1A]/20 via-transparent to-white/5"></div>
+
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                  <div className="w-16 h-16 rounded-full bg-[#C88A1A] flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <MapPin size={30} className="text-black" />
+                  </div>
+
+                  <p className="text-white text-lg font-semibold mb-2">
+                    Guarapari - ES
+                  </p>
+
+                  <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
+                    Travessa Oscar da Costa Neiva, nº 20
+                  </p>
+
+                  <span className="mt-6 text-[#C88A1A] text-xs uppercase tracking-widest">
+                    Clique para abrir no mapa
+                  </span>
+                </div>
+              </a>
             </div>
-
-            <div className="flex flex-col gap-6 flex-1">
-              {areas.map((area) => {
-                const IconComponent = area.icon;
-
-                return (
-                  <a
-                    key={area.title}
-                    href={`https://wa.me/5527997945980?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+%C3%A1rea+de+${encodeURIComponent(area.title)}.`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="block bg-[#0A0A0A] hover:bg-[#111111] border border-[#C88A1A]/20 hover:border-[#C88A1A]/50 p-8 flex-1 transition-all duration-300 group shadow-xl"
-                  >
-                    <div className="flex items-start gap-4">
-
-                      <div className="h-12 w-12 flex items-center justify-center border border-white/10 text-gray-300 group-hover:text-[#C88A1A] group-hover:border-[#C88A1A]/30 transition">
-                        <IconComponent size={22} />
-                      </div>
-
-                      <div>
-                        <h4 className="text-lg font-semibold text-white group-hover:text-[#C88A1A]">
-                          {area.title}
-                        </h4>
-
-                        <p className="text-sm text-gray-400 mt-2 leading-relaxed">
-                          {area.description}
-                        </p>
-
-                        <div className="flex items-center gap-1 text-[11px] font-semibold text-[#C88A1A] uppercase mt-4">
-                          {area.linkText}
-                          <ArrowRight size={12} />
-                        </div>
-                      </div>
-
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>
