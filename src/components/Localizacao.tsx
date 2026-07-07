@@ -73,7 +73,6 @@ export default function Localizacao() {
               className="inline-flex items-center justify-center gap-3 bg-[#0A0A0A] text-white px-6 py-4 text-xs uppercase tracking-widest hover:bg-[#C88A1A] hover:text-black transition w-full sm:w-auto"
             >
               <Navigation size={16} />
-              Abrir no Google Maps
             </a>
           </div>
 
