@@ -1,1 +1,1 @@
-Projeto de Cliente Profissional, 100% pronto.
+Projeto de Cliente, 100% pronto.
