@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Navigation, Clock, Phone } from 'lucide-react';
+import { MapPin, Clock, Phone } from 'lucide-react';
 
 export default function Localizacao() {
   return (
@@ -70,9 +70,9 @@ export default function Localizacao() {
               href="https://www.google.com/maps/search/?api=1&query=Travessa%20Oscar%20da%20Costa%20Neiva%2020%20Guarapari%20ES"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-[#0A0A0A] text-white px-6 py-4 text-xs uppercase tracking-widest hover:bg-[#C88A1A] hover:text-black transition w-full sm:w-auto"
+              className="inline-flex items-center justify-center bg-[#0A0A0A] text-white px-6 py-4 text-xs uppercase tracking-widest hover:bg-[#C88A1A] hover:text-black transition w-full sm:w-auto"
             >
-              
+              Abrir no Google Maps
             </a>
           </div>
 
