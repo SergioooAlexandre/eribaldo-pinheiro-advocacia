@@ -26,10 +26,10 @@ export default function AreasAtuacao() {
   return (
     <section
       id="areas"
-      className="w-full bg-white text-[#0A0A0A] py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      className="w-full bg-[#0A0A0A] text-white py-14 md:py-20 px-4 sm:px-6 lg:px-8 -mt-1"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <span className="text-xs uppercase tracking-[0.35em] text-[#C88A1A] block mb-4">
             Especialidades Jurídicas
           </span>
@@ -40,7 +40,7 @@ export default function AreasAtuacao() {
 
           <div className="w-20 h-[2px] bg-[#C88A1A] mx-auto mb-8"></div>
 
-          <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+          <p className="text-gray-300 leading-relaxed text-base md:text-lg">
             Atuação jurídica especializada com foco em soluções seguras,
             atendimento humanizado e defesa dos interesses de cada cliente.
           </p>
@@ -53,7 +53,7 @@ export default function AreasAtuacao() {
             return (
               <div
                 key={index}
-                className="bg-white border border-gray-100 rounded-sm p-8 md:p-10 text-center shadow-sm hover:shadow-xl hover:border-[#C88A1A]/40 transition duration-300"
+                className="bg-white text-[#0A0A0A] border border-white/10 rounded-sm p-8 md:p-10 text-center shadow-sm hover:shadow-xl hover:border-[#C88A1A]/60 transition duration-300"
               >
                 <div className="w-20 h-20 mx-auto mb-7 flex items-center justify-center">
                   <Icon

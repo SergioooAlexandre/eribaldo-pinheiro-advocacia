@@ -6,24 +6,22 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative z-0 min-h-screen pt-56 md:pt-64 pb-20 bg-[#0A0A0A] text-white flex items-center overflow-visible"
+      className="relative z-0 min-h-screen pt-28 md:pt-32 pb-16 bg-[#0A0A0A] text-white flex items-start overflow-hidden"
     >
-      {/* FUNDO */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-[10%] right-[-10%] w-[500px] h-[500px] bg-[#C88A1A]/10 blur-[120px]" />
+        <div className="absolute top-[8%] right-[-10%] w-[500px] h-[500px] bg-[#C88A1A]/10 blur-[120px]" />
         <div className="absolute bottom-[0%] left-[-10%] w-[400px] h-[400px] bg-white/5 blur-[100px]" />
       </div>
 
-      {/* CONTEÚDO */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
-          {/* ESQUERDA */}
-          <motion.div 
+          {/* TEXTO PRINCIPAL */}
+          <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-6"
+            className="lg:col-span-6 pt-6 md:pt-10"
           >
             <span className="text-xs uppercase tracking-[0.35em] text-[#C88A1A] block mb-6">
               Escritório Boutique de Advocacia
@@ -42,19 +40,19 @@ export default function Hero() {
               atendimento personalizado e atuação ética.
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://wa.me/5527997945980"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-[#C88A1A] text-black px-8 py-3 text-xs uppercase font-semibold"
+                className="bg-[#C88A1A] text-black px-8 py-3 text-xs uppercase font-semibold text-center hover:bg-white transition"
               >
                 Falar pelo WhatsApp
               </a>
 
               <a
                 href="mailto:adv.eribaldo@outlook.com"
-                className="border border-white/20 px-8 py-3 text-xs uppercase flex items-center gap-2"
+                className="border border-white/20 px-8 py-3 text-xs uppercase flex items-center justify-center gap-2 hover:border-[#C88A1A] hover:text-[#C88A1A] transition"
               >
                 <Mail size={14} />
                 Enviar e-mail
@@ -62,15 +60,14 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* DIREITA */}
-          <motion.div 
+          {/* CARD DE CONTATO */}
+          <motion.div
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-6"
+            className="lg:col-span-6 pt-4 md:pt-8"
           >
-            <div className="bg-[#111111] border border-white/10 p-8">
-
+            <div className="bg-[#111111] border border-white/10 p-6 md:p-8">
               <span className="text-xs text-[#C88A1A] uppercase">
                 Atendimento e Localização
               </span>
@@ -79,9 +76,7 @@ export default function Hero() {
                 Contato & Endereço
               </h3>
 
-              {/* CONTEÚDO + LOGO */}
               <div className="flex justify-between gap-6 items-start">
-
                 <div className="space-y-4 text-sm text-gray-300">
                   <div>
                     <p className="text-gray-400 text-xs">WhatsApp</p>
@@ -104,16 +99,15 @@ export default function Hero() {
 
                 <img
                   src="/images/logo.png"
-                  alt="Logo"
+                  alt="Logo Eribaldo Pinheiro"
                   className="w-[100px] object-contain"
                 />
               </div>
 
-              {/* FOTO */}
               <div className="mt-8 text-center">
                 <img
                   src="/images/dr-eribaldo.png"
-                  alt="Dr Eribaldo"
+                  alt="Dr. Eribaldo Silva Pinheiro"
                   className="w-[240px] mx-auto border-4 border-white"
                 />
 
@@ -125,7 +119,6 @@ export default function Hero() {
                   OAB/ES 30.809
                 </p>
               </div>
-
             </div>
           </motion.div>
 

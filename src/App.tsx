@@ -4,9 +4,9 @@ import Hero from './components/Hero';
 import Atendimento from './components/Atendimento';
 import Sobre from './components/Sobre';
 import AreasAtuacao from './components/AreasAtuacao';
+import FAQ from './components/FAQ';
 import Localizacao from './components/Localizacao';
 import Contato from './components/Contato';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
     <div className="min-h-screen bg-white flex flex-col font-sans overflow-x-hidden">
       <Header />
 
-      <main className="flex-grow pt-[70px]">
+      <main className="flex-grow">
         <Hero />
         <Atendimento />
         <Sobre />
