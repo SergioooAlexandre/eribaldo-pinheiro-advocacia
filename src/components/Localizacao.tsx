@@ -27,7 +27,7 @@ export default function Localizacao() {
               jurídico com seriedade, discrição e compromisso com cada cliente.
             </p>
 
-            <div className="space-y-5 mb-8">
+            <div className="space-y-5">
               <div className="flex items-start gap-4">
                 <div className="min-w-10 w-10 h-10 bg-[#C88A1A]/10 flex items-center justify-center">
                   <MapPin size={20} className="text-[#C88A1A]" />
@@ -65,15 +65,6 @@ export default function Localizacao() {
                 </div>
               </div>
             </div>
-
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Travessa%20Oscar%20da%20Costa%20Neiva%2020%20Guarapari%20ES"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center bg-[#0A0A0A] text-white px-6 py-4 text-xs uppercase tracking-widest hover:bg-[#C88A1A] hover:text-black transition w-full sm:w-auto"
-            >
-              Abrir no Google Maps
-            </a>
           </div>
 
           {/* LADO DIREITO - CARD/MAPA */}
